@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medical Dictionary - FR to EN</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <h1>🩺 Medical Dictionary</h1>
+        <input type="text" id="search" placeholder="Search a word..." />
+        <label class="switch">
+            <input type="checkbox" id="themeToggle" />
+            <span class="slider round"></span>
+          </label>
+
+    </header>
+
+    <button id="favoritesBtn">⭐ Voir Favoris</button>
+
+
+
+    <nav id="chapters">
+        <button onclick="loadChapter('Orientation anatomique')">Orientation anatomique</button>
+        <button onclick="loadChapter('Ostéologie – Membre Supérieur')">Ostéologie – Membre Supérieur</button>
+        <button onclick="loadChapter('Ostéologie – Membre Inférieur')">Ostéologie – Membre Inférieur</button>
+        <button onclick="loadChapter('Articulations et Mouvements')">Articulations et Mouvements</button>
+        <button onclick="loadChapter('Articulation de l’Épaule')">Articulation de l’Épaule</button>
+        <button onclick="loadChapter('Articulation du Coude')">Articulation du Coude</button>
+        <button onclick="loadChapter('Articulation coxo-fémorale')">Articulation coxo-fémorale</button>
+        <button onclick="loadChapter('Articulation du Genou')">Articulation du Genou</button>
+        <button onclick="loadChapter('Muscles du Membre Supérieur')">Muscles du Membre Supérieur</button>
+        <button onclick="loadChapter('Muscles du Membre Inférieur')">Muscles du Membre Inférieur</button>
+        <button onclick="loadChapter('Vascularisation & Lymphatiques du Membre Supérieur')">Vascularisation & Lymphatiques du Membre Supérieur</button>
+        <button onclick="loadChapter('Vascularisation & Lymphatiques du Membre Inférieur')">Vascularisation & Lymphatiques du Membre Inférieur</button>
+    </nav>
+
+
+
+    <main id="dictionary"></main>
+
+
+    <script src="script.js"></script>
+
+
+
+</body>
+
+</html>
